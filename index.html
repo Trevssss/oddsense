@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f19">
+  <meta name="description" content="OddSense explains sports odds and live markets with probability-led insights, transparent data, and portable betslips.">
+  <title>OddSense | Understand the odds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body class="landing-page">
+  <div class="local-run-notice" id="localRunNotice" role="status" hidden>
+    <strong>For the dashboard and live fixtures, run OddSense through its local server.</strong>
+    <span>From the project folder run <code>node .\server.js</code>, then open <a href="http://localhost:4173">http://localhost:4173</a>.</span>
+  </div>
+  <header class="landing-header">
+    <div class="landing-nav-wrap">
+      <a class="landing-brand" href="index.html" aria-label="OddSense home">
+        <svg class="brand-logo" viewBox="0 0 320 72" fill="none" role="img" aria-label="OddSense Sports Analytics AI">
+          <defs>
+            <linearGradient id="landingEmerald" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#059669"/><stop offset="50%" stop-color="#10B981"/><stop offset="100%" stop-color="#34D399"/></linearGradient>
+            <linearGradient id="landingSlate" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1E293B"/><stop offset="100%" stop-color="#0F172A"/></linearGradient>
+          </defs>
+          <rect x="4" y="8" width="56" height="56" rx="14" fill="url(#landingSlate)" stroke="#1E293B" stroke-width="1.5"/>
+          <circle cx="32" cy="36" r="16" stroke="#334155" stroke-width="3.5"/>
+          <path d="M19.5 46A16 16 0 1 1 46.5 29.5" stroke="url(#landingEmerald)" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="m18 41 8-5 5 4 13-15" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="44" cy="25" r="3.5" fill="#10B981" stroke="#0B0F19" stroke-width="1.5"/>
+          <text x="74" y="45" font-family="'DM Sans',sans-serif" font-size="30" font-weight="800" letter-spacing="-.8"><tspan fill="#F8FAFC">Odd</tspan><tspan fill="url(#landingEmerald)">Sense</tspan></text>
+          <text x="76" y="60" font-family="'DM Mono',monospace" font-size="9.5" font-weight="500" letter-spacing="2.4" fill="#64748B">SPORTS ANALYTICS AI</text>
+        </svg>
+      </a>
+      <nav class="landing-nav" aria-label="Main navigation">
+        <a href="#features">Platform</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#data">Data & accuracy</a>
+        <a href="#responsible">Responsible play</a>
+      </nav>
+      <div class="landing-actions">
+        <a class="landing-cta" href="dashboard.html">Open dashboard <span>→</span></a>
+      </div>
+      <button class="landing-menu-button" id="landingMenuButton" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="landing-hero">
+      <div class="hero-orb hero-orb-one"></div><div class="hero-orb hero-orb-two"></div>
+      <div class="landing-container hero-layout">
+        <div class="hero-copy-block">
+          <p class="landing-eyebrow"><span></span> SPORTS ODDS, MADE CLEARER</p>
+          <h1>Understand the odds.<br><em>Make your own call.</em></h1>
+          <p class="hero-description">OddSense brings fixtures, bookmaker prices and transparent probability insights into one place—so you can compare the markets without mistaking an estimate for a guarantee.</p>
+          <div class="hero-buttons">
+            <a class="landing-cta large" href="dashboard.html">Explore the dashboard <span>→</span></a>
+          </div>
+          <div class="hero-trust"><span>◉ Multi-sport fixtures</span><span>◉ Odds-implied probabilities</span><span>◉ Manual slip export</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Illustration of sports market odds">
+          <div class="visual-card visual-card-back"><span>MARKET MOVEMENT</span><div class="visual-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Compare prices. Keep context.</small></div>
+          <div class="visual-card visual-card-front">
+            <div class="visual-card-head"><span class="visual-live"><i></i> MARKET SNAPSHOT</span><span>1X2</span></div>
+            <div class="visual-fixture"><span class="visual-team-icon">H</span><strong>Home</strong><span>vs</span><span class="visual-team-icon alt">A</span><strong>Away</strong></div>
+            <div class="visual-odds"><div><small>HOME</small><strong>—</strong></div><div><small>DRAW</small><strong>—</strong></div><div><small>AWAY</small><strong>—</strong></div></div>
+            <div class="visual-disclaimer">Illustrative interface · live prices load from your configured feed</div>
+          </div>
+          <div class="visual-floating"><span>✦</span><div><small>ODDSENSE</small><strong>Context, not certainty.</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="landing-intro" id="features">
+      <div class="landing-container">
+        <div class="landing-section-heading">
+          <p class="landing-eyebrow"><span></span> ONE CLEARER VIEW</p>
+          <h2>Everything you need to <em>read the market.</em></h2>
+          <p>OddSense is an analysis workspace, not a bookmaker. It helps organize fixture information and compare available prices before you make your own decision.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-icon green">◈</span><p class="feature-index">01 · FIXTURES</p><h3>Follow the schedule</h3><p>Browse live and upcoming events across the sports supported by your configured data products. Move between today and the next two weeks.</p></article>
+          <article class="feature-card"><span class="feature-icon amber">⌁</span><p class="feature-index">02 · ODDS CONTEXT</p><h3>Compare what prices imply</h3><p>When current odds are available, OddSense calculates a bookmaker-implied probability from listed outcomes. That reflects a market price—not a guaranteed result or independent prediction.</p></article>
+          <article class="feature-card"><span class="feature-icon purple">✦</span><p class="feature-index">03 · MATCH ANALYSIS</p><h3>Ask focused questions</h3><p>Review the data actually supplied for a fixture. Missing form, injury or lineup coverage is called out rather than filled in with invented statistics.</p></article>
+          <article class="feature-card"><span class="feature-icon blue">▤</span><p class="feature-index">04 · BETSLIP WORKSPACE</p><h3>Prepare a portable slip</h3><p>Combine selected markets, calculate total odds and potential payout, then copy or share a formatted list for manual entry in your chosen app.</p></article>
+          <article class="feature-card"><span class="feature-icon teal">◎</span><p class="feature-index">05 · SPORTS COVERAGE</p><h3>See configured sports</h3><p>The dashboard lists the sports enabled by your provider configuration. Fixture availability still depends on your API plan, leagues, odds coverage and selected dates.</p></article>
+          <article class="feature-card"><span class="feature-icon slate">↗</span><p class="feature-index">06 · TRANSPARENCY</p><h3>Know what is connected</h3><p>The dashboard reports when the live feed is unavailable. It never silently substitutes made-up sample fixtures or generates fake bookmaker booking codes.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="landing-container how-layout">
+        <div class="landing-section-heading left">
+          <p class="landing-eyebrow"><span></span> A STRAIGHTFORWARD WORKFLOW</p>
+          <h2>From fixture to <em>informed choice.</em></h2>
+          <p>Use OddSense to organize information—not to outsource your judgment.</p>
+          <a class="landing-text-link" href="dashboard.html">See the dashboard <span>→</span></a>
+        </div>
+        <ol class="steps-list">
+          <li><span>01</span><div><h3>Choose a sport and date range</h3><p>Filter provider-supplied fixtures, including events scheduled over the next 14 days.</p></div></li>
+          <li><span>02</span><div><h3>Review available odds</h3><p>Inspect listed markets and compare their implied probabilities. Missing prices remain unavailable.</p></div></li>
+          <li><span>03</span><div><h3>Ask about the data</h3><p>Open the match analyst for market context and clear notes about data gaps and uncertainty.</p></div></li>
+          <li><span>04</span><div><h3>Build and export a slip</h3><p>Choose selections, enter a stake, and copy/share the summary. Recheck all prices in the bookmaker app.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="data-section" id="data">
+      <div class="landing-container data-layout">
+        <div>
+          <p class="landing-eyebrow"><span></span> DATA & ACCURACY</p>
+          <h2>Clear about what OddSense <em>can—and can’t—know.</em></h2>
+          <p>Sports outcomes are uncertain. No AI or statistics can make predictions right every time. Odds-derived percentages describe the market price; they do not prove that an outcome is likely to happen.</p>
+        </div>
+        <div class="data-points">
+          <div><span>✓</span><p><strong>Live football fixtures require a GOAL API key.</strong> The key is read by the local server and is not included in browser code.</p></div>
+          <div><span>✓</span><p><strong>Sport coverage depends on your API products and plan.</strong> Additional sports need an available product endpoint and compatible adapter.</p></div>
+          <div><span>✓</span><p><strong>Odds are not performance statistics.</strong> Form, head-to-head, injuries and lineups only appear when a connected source actually provides them.</p></div>
+          <div><span>✓</span><p><strong>Final-result feedback is score-based.</strong> OddSense only marks a selection won or lost after a provider reports a verified final score.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slip-section">
+      <div class="landing-container slip-banner">
+        <div><p class="landing-eyebrow"><span></span> YOUR PICKS, YOUR DECISION</p><h2>A clearer slip.<br><em>No fake booking codes.</em></h2><p>SportyBet, Bet9ja and MSport do not share one universal booking-code format. OddSense prepares a manual-entry summary; it does not place bets or claim that a generated code will work.</p></div>
+        <a class="landing-cta large" href="dashboard.html">Build a slip <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="responsible-section" id="responsible">
+      <div class="landing-container responsible-card">
+        <span class="responsible-mark">ⓘ</span>
+        <div><p class="landing-eyebrow">RESPONSIBLE GAMBLING</p><h2>Keep it in perspective.</h2><p>Betting involves financial risk. Set limits, never chase losses, and only wager money you can afford to lose. OddSense is an informational tool—not financial advice, a guarantee, or a substitute for support. If gambling is affecting you or someone close to you, contact a local gambling-support service.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="landing-footer">
+    <div class="landing-container footer-inner"><a class="footer-wordmark" href="index.html">Odd<span>Sense</span></a><p>Sports analytics, with uncertainty made visible.</p><div><a href="#data">Data & accuracy</a><a href="#responsible">Responsible play</a><a href="dashboard.html">Dashboard</a></div><small>© 2026 OddSense. Informational use only.</small></div>
+  </footer>
+
+  <script src="landing.js" defer></script>
+</body>
+</html>
